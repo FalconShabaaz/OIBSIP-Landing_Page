@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img src="Images/pizzalogo.jpg" alt="logo" class="logo" /><span class="title">Pizza Palette</span>
+        <nav class="innernav">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Category</a></li>
+          </ul>
+        </nav>
+        <img src="Images/user.png" alt="user" class="user"/>
+        <img src="Images/cart.png" alt="cart" class="cart" />
+      </div>
+
+      <div class="content">
+        <a href="" class="btn" id="try">Try new Combos</a>
+        <h1>You should always<br />feel hungry</h1>
+        <p>" Let The Cheese Mess With Your Cheek."</p>
+
+        <div class="arrows">
+          <img src="Images/leftarrow.png" alt="arrow"  class="leftarrow"/>
+          <img src="Images/rightarrow.png" alt="arrow"  class="rightarrow"/>
+        </div>
+      </div>
+
+      <img src="Images/model1.png" alt="modelimg" class="modelimg" id="image" />
+      <div class="socialmedia">
+        <a href="https://www.facebook.com/mohommedshabaaz.hussain.7" ><img src="Images/facebook.png" alt="facebooklogo"></a>
+        <a href="https://www.instagram.com/prinzzy__shabaaz08/" ><img src="Images/instagram.png" alt="instagramlogo"></a>
+        <a href="https://www.linkedin.com/in/mohammed-shabaaz/" ><img src="Images/linkedin.png" alt="linkedinlogo"></a>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      let image = document.getElementById('image')
+      let images = ['Images/model1.png','Images/model2.png','Images/model3.png','Images/model4.png'];
+      setInterval(function(){
+           let random = Math.floor(Math.random() *4);
+           image.src = images[random]; 
+      },800);
+    </script>
+  </body>
+</html>
